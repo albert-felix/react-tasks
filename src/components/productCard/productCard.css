@@ -1,0 +1,33 @@
+.product-card {
+    width: 300px;
+    height: 550px;
+    text-align: left;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(99, 70, 70);
+    padding: 10px;
+    margin: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rating {
+    margin-bottom: 0;
+}
+
+.prime {
+    margin-top: 0;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-button {
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px rgb(88, 87, 87);
+}
