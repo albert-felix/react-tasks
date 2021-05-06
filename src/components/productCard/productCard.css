@@ -1,11 +1,12 @@
 .product-card {
     width: 300px;
-    height: 550px;
+    height: 500px;
     text-align: left;
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgb(99, 70, 70);
     padding: 10px;
     margin: 20px;
+    position: relative;
 }
 
 .product-image {
@@ -24,6 +25,9 @@
 .add-to-cart {
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 85px;
+    bottom: 30px;
 }
 
 .cart-button {

@@ -1,20 +1,26 @@
 import './App.css';
 import ProductCard from './components/productCard/ProductCard';
-import yonex from './images/yonex.webp'
+import ProductList from './mockData/productList'
 
 function App() {
-  return (
-    <div className="App">
-      <ProductCard
-        image={yonex}
-        title="Yonex Arcsaber 71 Light Graphite Badminton Raquet with free Full Cover (77 grams, 30 lbs Tension)"
-        price={2500}
-        rating={4}
-        review={250}
-        isPrime={true}
-      />
-    </div>
-  );
+  
+    return (
+      <div className="App">
+      {ProductList.map(product => {
+        return(
+          <ProductCard
+            image={product.image}
+            title={product.title}
+            price={product.price}
+            rating={product.rating}
+            review={product.review}
+            isPrime={product.isPrime}
+          />
+        )
+      })}
+      </div>
+    );
+  
 }
 
 export default App;
